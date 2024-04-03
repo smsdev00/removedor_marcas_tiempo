@@ -21,7 +21,6 @@ def remove_timestamps_handler():
     text = text_area.get("1.0", "end-1c").strip()  # Get text from text area and remove leading/trailing whitespace
     try:
         processed_text = remove_timestamps(text)
-        processed_text = processed_text.strip()  # Remove leading/trailing whitespace from processed text
         pyperclip.copy(processed_text)  # Copy processed text to clipboard
         text_area.delete("1.0", "end")  # Clear text input area after success
         text_area.insert("1.0", processed_text)  # Fill text area with modified text
@@ -33,7 +32,6 @@ def remove_timestamps(text):
     
     # Use regular expression to remove text inside square brackets
     processed_text = re.sub(r'\[\d{2}:\d{2}\.\d{3} --&gt; \d{2}:\d{2}\.\d{3}\]', '', text)
-    # processed_text = re.sub(r'\[[^\]]*\]', '', text)
 
     # Remove leading and trailing white spaces from each line
     processed_text = '\n'.join([line.strip() for line in processed_text.split('\n')])
@@ -98,9 +96,6 @@ def show_tutorial():
     """
     text_area.delete("1.0", "end")  # Clear text input area after success
     text_area.insert("1.0", tutorial_text)  # Fill text area with modified text
-    #messagebox.showinfo("Tutorial de Uso", tutorial_text)
-
-
 
 
 root = tk.Tk()
