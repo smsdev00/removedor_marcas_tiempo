@@ -2,17 +2,15 @@
 #!/bin/bash
 
 # Define the path to your local repository
-repoPath="/home/sms/code/removedor_marcas_tiempo"
+#repoPath="/home/sms/code/removedor_marcas_tiempo"
 
 # Navigate to the repository directory
-cd "$repoPath"
-echo "working on $repoPath directory"
+#cd "$repoPath"
+#echo "working on $repoPath directory"
 
 # Install python script dependencies
 echo "Install python script dependencies"
 pip install -r requirements.txt
-
-
 
 # Perform a Git fetch to update the remote references
 echo "Perform a Git fetch to update the remote references"

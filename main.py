@@ -1,8 +1,13 @@
 import tkinter as tk
 from tkinter import messagebox, filedialog
-import pyperclip
 import re  # Import the re module for regular expressions
 import os
+
+# Check if pyperclip is installed
+try:
+    import pyperclip
+except ImportError:
+    raise ImportError("The 'pyperclip' module is required. Please install it using 'pip install pyperclip'.")
 
 # Check if python-docx is installed
 try:
