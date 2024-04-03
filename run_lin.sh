@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # Define the path to your local repository
-repoPath="/home/sms/code/removedor_marcas_tiempo"
+repoPath="/home/sms/code/removedor_marcas_tiempo2"
 
 # Navigate to the repository directory
 cd "$repoPath"
