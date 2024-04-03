@@ -19,4 +19,4 @@ if ($updatesAvailable -match "Your branch is behind") {
 
 # Run the Python script from the repository directory
 Write-Host "Running python script"
-python main.py translate to powershell
+python main.py
