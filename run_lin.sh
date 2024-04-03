@@ -1,17 +1,3 @@
-### Bash Script (for Git Bash or WSL):
-#!/bin/bash
-
-# Define the path to your local repository
-<<<<<<< HEAD:run.sh
-#repoPath="/home/sms/code/removedor_marcas_tiempo"
-=======
-repoPath="/home/sms/code/removedor_marcas_tiempo2"
->>>>>>> fea129f94632fcdf01881f404d66f50c1e6997e3:run_lin.sh
-
-# Navigate to the repository directory
-#cd "$repoPath"
-#echo "working on $repoPath directory"
-
 # Install python script dependencies
 echo "Install python script dependencies"
 pip install -r requirements.txt
