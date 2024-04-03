@@ -12,3 +12,9 @@ Make sure you have the following Python packages installed:
 - pyperclip
 - python-docx
 
+## Run
+### Windows
+Run **execute.bat**
+
+### Linux
+Run **run_lin.sh**. Remember to may it executable by **chmod 755 run_lin.sh**
