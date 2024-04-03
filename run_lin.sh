@@ -1,6 +1,6 @@
 # Install python script dependencies
 echo "Install python script dependencies"
-pip install -r requirements.txt
+pip install -r requirements.txt > /dev/null 2>&1
 
 # Perform a Git fetch to update the remote references
 echo "Perform a Git fetch to update the remote references"
